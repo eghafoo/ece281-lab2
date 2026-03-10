@@ -80,7 +80,7 @@ begin
         w_Hex <= x"B"; wait for 10 ns;
         assert w_seg_n = "0000011" report "error xB" severity failure;
         w_Hex <= x"C"; wait for 10 ns;
-        assert w_seg_n = "1000111" report "error xC" severity failure;
+        assert w_seg_n = "0100111" report "error xC" severity failure;
         w_Hex <= x"D"; wait for 10 ns;
         assert w_seg_n = "0100001" report "error xD" severity failure;
         w_Hex <= x"E"; wait for 10 ns;
